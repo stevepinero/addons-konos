@@ -17,6 +17,7 @@ This repository´s main purpose is to group basic chilean and accounting modules
  - Marcel Rodríguez <jmrv1981@hotmail.com>
  - Carlos Soto <odoo.soporte@gmail.com>
  - Rodolfo Bermúdez Neubauer <odoo@intellego-bi.com>
+ - Steve Piñero <stevepinero@gmail.com> (OdooCorp SPA)
 
 
 
@@ -44,3 +45,4 @@ Este repositorio tiene como finalidad agrupar algunos módulos básicos para la 
  - Marcel Rodríguez <jmrv1981@hotmail.com>
  - Carlos Soto <odoo.soporte@gmail.com>
  - Rodolfo Bermúdez Neubauer <odoo@intellego-bi.com>
+ - Steve Piñero <stevepinero@gmail.com> (OdooCorp SPA)
