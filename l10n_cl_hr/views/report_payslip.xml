@@ -104,6 +104,9 @@
                           <t t-if="('CAPITAL' == o.contract_id.afp_id.name)">
                             <strong t-raw="o.indicadores_id.tasa_afp_capital"/>
                           </t>
+                          <t t-if="('UNO' == o.contract_id.afp_id.name)">
+                              <span t-raw="o.indicadores_id.tasa_afp_uno"/>
+                          </t>
                         </td>
                         <td>
                           <t t-if="('FONASA' == o.contract_id.isapre_id.name)">

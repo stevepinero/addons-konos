@@ -116,6 +116,8 @@ class hr_indicadores_previsionales(models.Model):
         'PlanVital',  help="Tasa AFP PlanVital")
     tasa_afp_habitat = fields.Float(
         'Habitat',  help="Tasa AFP Habitat")
+    tasa_afp_uno = fields.Float(
+        'Uno', help="Tasa AFP Uno")        
     tasa_sis_cuprum = fields.Float(
         'SIS', help="Tasa SIS Cuprum")
     tasa_sis_capital = fields.Float(
@@ -128,6 +130,8 @@ class hr_indicadores_previsionales(models.Model):
         'SIS',  help="Tasa SIS Habitat")
     tasa_sis_modelo = fields.Float(
         'SIS',  help="Tasa SIS Modelo")
+    tasa_sis_uno = fields.Float(
+        'SIS', help="Tasa SIS Uno")
     tasa_independiente_cuprum = fields.Float(
         'SIS',  help="Tasa Independientes Cuprum")
     tasa_independiente_capital = fields.Float(
@@ -140,6 +144,8 @@ class hr_indicadores_previsionales(models.Model):
         'SIS',  help="Tasa Independientes Habitat")
     tasa_independiente_modelo = fields.Float(
         'SIS',  help="Tasa Independientes Modelo")
+    tasa_independiente_uno = fields.Float(
+        'SIS', help="Tasa Independientes Uno")
     tope_anual_apv = fields.Float(
         'Tope Anual APV',  help="Tope Anual APV")
     tope_mensual_apv = fields.Float(
@@ -307,6 +313,9 @@ class hr_indicadores_previsionales(models.Model):
             self.tasa_afp_modelo = clear_string(letters[7].select("strong")[23].get_text())
             self.tasa_sis_modelo = clear_string(letters[7].select("strong")[24].get_text())
 
+            self.tasa_afp_uno = clear_string(letters[7].select("strong")[23].get_text())
+            self.tasa_sis_uno = clear_string(letters[7].select("strong")[24].get_text())
+            
             self.tasa_independiente_capital = clear_string(letters[7].select("strong")[10].get_text())[:5]
             self.tasa_independiente_cuprum = clear_string(letters[7].select("strong")[13].get_text())
             self.tasa_independiente_habitat = clear_string(letters[7].select("strong")[16].get_text())
